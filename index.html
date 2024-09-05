@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>HomeworkSMP</title>
+</head>
+<body>
+    <div class="box">
+        <h1>HomeworkSMP</h1>
+        <p>A SMP filled with creativity, a bunch of <s>insane</s> teens with passion.</p>
+    </div>
+
+    <footer>
+        <div>
+            a
+        </div>
+        <p>HomeworkSMP All Rights Reserved. Made with 💚🤍💙 by Acto.</p>
+    </footer>
+
+    <script>
+        var images = Math.floor(Math.random() * 5);
+        var usernames = ["@acto.", "@williamhorning", "@williamhorning", "@avogato_the_ailurophile", "@avogato_the_ailurophile"];
+        var path = `./assets/bkg/${images}.png`;
+        document.body.style.backgroundImage = `url(${path})`;
+        document.getElementsByTagName("footer")[0].getElementsByTagName("div")[0].innerHTML = `Background Image by ${usernames[images]} \n`;
+    </script>
+</body>
+</html>
